@@ -1,0 +1,39 @@
+userName:
+accessKey:
+
+projectName: TestNG Demos
+buildName: Appium Demo TestNG
+buildIdentifier: '#${BUILD_NUMBER}'
+
+framework: testng
+
+#app: ./browserstack-demoapp.apk
+app: bs://fdb9f22622b9943b32186d01cbb9357bb00e304d
+
+platforms:
+  - deviceName: Samsung Galaxy S23
+    osVersion: 13.0
+  - deviceName: Samsung Galaxy S22 Ultra
+    osVersion: 12.0
+#  - deviceName: Google Pixel 7 Pro
+#    osVersion: 13.0
+#  - deviceName: Google Pixel 6
+#    osVersion: 12.0
+#  - deviceName: Samsung Galaxy S21 Ultra
+#    osVersion: 11.0
+
+parallelsPerPlatform: 2
+
+source: testng:archetype-setup:v1.5
+
+browserstackLocal: false
+autoGrantPermissions: true
+autoAcceptAlerts: true
+
+debug: false
+networkLogs: true
+gpsLocation: 18.93611,72.83516
+geoLocation: US
+timezone: Hong_Kong
+appiumVersion: 1.22.0
+logLevel: debug
